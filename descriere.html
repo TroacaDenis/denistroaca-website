@@ -3,8 +3,9 @@
 <body>
 
 <p>Aplicatie web - magazin online cu hrana pentru animale.</p>
-<p>Domain name - denistroaca.xyz</p>
-<p>Hosting - Heroku</p>
+<p>Domain name - denistroaca.tk</p>
+<p>Hosting - 000webhost</p>
+<p>SSL - Cloudflare</p>
 <p>
     Roluri, entitati si procese specifice aplicatiei - Aplicatia va arata o lista cu diferite produse, afisand pentru fiecare numele, pretul, o imagine cu produsul, 
     rating-ul, numarul de rating-uri si optiunile de a lasa un rating sau de a il adauga in cos. Aceste optiuni necesita ca cel ce foloseste aplicatia sa aiba un cont 
@@ -16,13 +17,13 @@
 </p>
 <p>Baza de date - are urmatoatere entitati:</p>
 <ul>
-    <li>CUSTOMERS - id, nume, tlefon, oras, cod postal, email si parola pentru cont</li>
-    <li>PRODUCTS - id, nume, pret, cantitate ramasa, media rating-urilor, numarul de rating-uri</li>
-    <li>RATINGS - id client, id produs, rating-ul produsului</li>
-    <li>ORDERS - id client, id produs, cantitaea comandata</li>
-    <li>ORDER_HISTORY - id client, id produs, cantitaea comandata, data comenzii</li>
+    <li>users - id, email, username, parola</li>
+    <li>products - id, nume, pret, cantitate ramasa, media rating-urilor, numarul de rating-uri</li>
+    <li>ratings - id client, id produs, rating-ul produsului</li>
+    <li>orders - id client, id produs, cantitaea comandata</li>
+    <li>order_history - id client, id produs, cantitaea comandata, data comenzii</li>
   </ul>
-<p>ORDERS pastreaza toate produsele din toate cosurile, iar atunci cand o comanda este finalizata, sunt eliminate produele din ORDERS cu id-ul acelui client si adaugate in ORDER_HISTORY</p>
+<p>orders pastreaza toate produsele din toate cosurile, iar atunci cand o comanda este finalizata, sunt eliminate produele din ORDERS cu id-ul acelui client si adaugate in ORDER_HISTORY</p>
 <img src="website.PNG" width="75%" height="75%">
 </body>
 </html>
